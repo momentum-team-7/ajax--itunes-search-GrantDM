@@ -1,0 +1,43 @@
+body {
+    background-color: rgba(211, 104, 90, 0.666);
+}
+
+.search-section {
+    display: flex;
+    justify-content: center;
+}
+
+.song-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: fit-content;
+    margin-top: 15px;
+}
+
+.song-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 40%;
+    margin: 40px;
+    background-color: aqua;
+    border:solid red 3px;
+}
+
+.song-box {
+    display: flex;
+    flex-direction: wrap;
+    /* width: 100%; */
+}
+
+.song-info {
+    border: solid;
+    width: 70%;
+}
+
+.song-image {
+    /* height: fit-content; */
+    width: 120px;
+
+}
