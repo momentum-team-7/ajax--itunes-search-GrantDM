@@ -49,7 +49,7 @@ function listSongs() {
                     }    
             } else {
 // if we get no data for our search this function is called
-                    showError()
+                    noResults()
             }
         })
         .catch(error => {
@@ -184,3 +184,16 @@ function showError() {
     songSection.appendChild(errorTroll)
 }
 
+function noResults() {
+    let errorTroll = document.createElement('div')
+    errorTroll.className = 'error-message'
+    let errorMsg = document.createElement('p')
+    let errorRick = document.createElement('div')
+    errorMsg.innerHTML = "You found no results! what would Rick do?! Try again of course!"
+    errorRick.innerHTML = `<video controls autoplay='true' src="https://video-ssl.itunes.apple.com/itunes-assets/Video118/v4/04/b5/e3/04b5e334-fbcf-5f26-e981-8de20fd4b76d/mzvf_4028901463979513279.640x464.h264lc.U.p.m4v">`
+    
+    errorTroll.appendChild(errorMsg)
+    errorTroll.appendChild(errorRick)
+
+    songSection.appendChild(errorTroll)
+}
