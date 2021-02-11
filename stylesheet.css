@@ -1,5 +1,17 @@
 body {
-    background-color: rgba(211, 104, 90, 0.666);
+    background-color: #ff5f58;
+}
+
+header {
+    text-align: center;
+    margin: 20px 0px;
+    font-size: 36px;
+}
+
+.player-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
 }
 
 .search-section {
@@ -19,10 +31,10 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 40%;
+    max-width: 25%;
     margin: 40px;
-    background-color: aqua;
-    border:solid red 3px;
+    background-color: #fd9301;
+    border:solid #9c2ea1 3px;
 }
 
 .song-box {
@@ -32,12 +44,13 @@ body {
 }
 
 .song-info {
-    border: solid;
-    width: 70%;
+    justify-content: center;
+    width: 50%;
+    font-size: 14px;
 }
 
 .song-image {
-    /* height: fit-content; */
+    height: fit-content;
     width: 120px;
 
 }
