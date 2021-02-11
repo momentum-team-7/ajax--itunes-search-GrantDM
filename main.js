@@ -162,8 +162,7 @@ function clearError() {
 
     for (let error of errors)
         error.remove()
-        clearInputs()
-        
+
 }
 
 
