@@ -1,11 +1,35 @@
 body {
-    background-color: #ff5f58;
+    background-color: #EFEFEF;
+}
+
+body.dark-mode {
+    background-color: #605553;
+    color: white;
+}
+
+body.dark-mode header {
+    text-align: center;
+    margin: 20px 0px;
+    font-size: 36px;
+    color: white;
+}
+
+body.dark-mode .song-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 25%;
+    margin: 40px;
+    background-color: #1f2222;
+    border:solid #A9A9A9 3px;
+    border-radius: 5px;
 }
 
 header {
     text-align: center;
     margin: 20px 0px;
     font-size: 36px;
+    color: #A9A9A9;
 }
 
 .player-container {
@@ -33,8 +57,9 @@ header {
     justify-content: space-between;
     max-width: 25%;
     margin: 40px;
-    background-color: #fd9301;
-    border:solid #9c2ea1 3px;
+    background-color: #CAEBF2;
+    border:solid #A9A9A9 3px;
+    border-radius: 5px;
 }
 
 .song-box {
@@ -53,4 +78,9 @@ header {
     height: fit-content;
     width: 120px;
 
+}
+
+button {
+    background-color: #FF3B3F;
+    border-radius: 10px;
 }
