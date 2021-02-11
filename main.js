@@ -26,10 +26,6 @@ btn.addEventListener('click', function() {
 function listSongs() {
     let songInput = document.querySelector('input').value
 // this applies a variable name to the user input data they will give us
-    songInput.replace(" ", "+")
-    songInput.replace("'", "%27")
-// these help make the possible user inputs more varied and not require them to know
-// the url rules for searching
 
     fetch(itunesUrl + songInput + '&limit=12')
 // this fetch request uses our established itunes url variable and applies the user input
