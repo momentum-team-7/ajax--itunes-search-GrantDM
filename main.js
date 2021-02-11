@@ -15,6 +15,14 @@ form.addEventListener('submit', event => {
 // first clearInputs in order to remove any unwanted leftover searches from previous
 // submits but then after to render the new searches on the page
 
+const btn = document.querySelector('.btn-toggle');
+
+// Listen for a click on the button
+btn.addEventListener('click', function() {
+// Then toggle (add/remove) the .dark-theme class to the body
+    document.body.classList.toggle('dark-mode');  
+})
+
 function listSongs() {
     let songInput = document.querySelector('input').value
 // this applies a variable name to the user input data they will give us
