@@ -32,6 +32,10 @@ header {
     color: #A9A9A9;
 }
 
+input {
+    width: 250px;
+}
+
 .player-container {
     display: flex;
     justify-content: center;
